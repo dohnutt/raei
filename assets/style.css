@@ -1,12 +1,3 @@
-/*
-Theme Name: RAEI
-Author: Eric Moss
-Author URI: http://ericmoss.ca
-Description: A custom WordPress theme for RA Engineers & Inspectors.
-Version: 1.0
-Text Domain: raei
-*/
-
 html, body, h1, h2, h3, h4, h5, h6, a.button {
 	font-family: "Fira Sans", Helvetica, Helvetica Neue, Arial, sans-serif;
 }
