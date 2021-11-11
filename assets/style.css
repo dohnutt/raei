@@ -1,0 +1,116 @@
+/*
+Theme Name: RAEI
+Author: Eric Moss
+Author URI: http://ericmoss.ca
+Description: A custom WordPress theme for RA Engineers & Inspectors.
+Version: 1.0
+Text Domain: raei
+*/
+
+html, body, h1, h2, h3, h4, h5, h6, a.button {
+	font-family: "Fira Sans", Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+a {
+	transition: all 0.5s ease;
+}
+
+h1, h2, h3 {
+	font-weight:500;
+	letter-spacing: -1px;
+}
+
+strong {
+	font-weight:500;
+}
+
+hr {
+	border-top: 1px solid #002750;
+	margin: 2em 0;
+}
+
+.row {
+	padding: 3em 0;
+	max-width:100%;
+}
+
+.row .wrapper {
+	max-width: 1000px;
+	margin: auto;
+}
+
+header.row .drop {
+	margin-top:3.5em;
+}
+
+.row#intro h1 {
+	font-size:2em;
+}
+
+h1 span {
+	color: #a1906e;
+}
+
+.row#services {
+	background-color: #a1906e;
+}
+.row#services ul {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	list-style-position: inside;
+}
+.row#services ul li {
+	color: #ffffff;
+	font-size: 1.6em;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+	padding-left: 1.375em;
+	text-indent: -1.325em;
+}
+.row#services ul.medium-12.large-6 {
+	margin-bottom: 0;
+}
+
+.row#content {
+	min-height: 200px;
+}
+
+.button {
+	border-radius: 2px;
+}
+
+#contact address,
+#contact p {
+	font-style: normal;
+	font-size: 1.4em;
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+footer {
+	background: #002750;
+	min-height:100px;
+	color: #ffffff;
+}
+
+footer.row .drop {
+	margin-top: 2em;
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+	header.row div.drop {
+		margin-top:1em;
+	}
+	.row#services ul {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
+
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
