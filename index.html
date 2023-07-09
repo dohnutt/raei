@@ -110,7 +110,7 @@
         <div class="wrapper">
 
         <div class="large-12 columns">
-            <p>Providing engineering services for more than 28 years.</p>
+            <p>Providing engineering services for more than <span id="years-active">36</span> years.</p>
             <h1>Our mission is to provide engineering and inspection services in a manner that our clients value; honest efforts to give them reasonable, and practical solutions and direct answers to their unique problems.</h1>
             <hr>
             <p>Rowswell &amp; Associates Engineers was founded in 1986 by the late John Rowswell. Since that time, we have been providing civil, structural, welding engineering and inspection, and project management services throughout Northern Ontario and Michigan.</p>
@@ -172,7 +172,7 @@
                 <a href="/"><img src="assets/raei-logo-white.png" alt="RA Engineers &amp; Inspectors Logo"></a>
             </div>
             <div class="medium-7 large-9 columns drop">
-                <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> RA Engineers &amp; Inspectors.</p>
+                <p>&copy; <span id="copyright-year">2023</span> RA Engineers &amp; Inspectors.</p>
 
                 <!--<div class="large-6 columns">
                     <ul class="inline-list right">
@@ -186,6 +186,15 @@
 
         </div>
     </footer>
+
+    <script type="text/javascript">
+    // copyright year
+    document.getElementById('copyright-year').innerHTML = new Date().getFullYear();
+
+    // providing services for more than X years
+    // where X is the number of years rounded down to the nearest 5
+    document.getElementById('years-active').innerHTML = Math.floor((new Date().getFullYear() - 1986) / 5) * 5;
+    </script>
 
 </body>
 </html>
